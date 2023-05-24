@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    local = {
+    random = {
       source  = "hashicorp/random"
     }
   }
