@@ -1,0 +1,11 @@
+name: Lint Code Base
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    uses: riege/code-quality/.github/workflows/tflint.yml@advanced-terraform
+    permissions: write-all
